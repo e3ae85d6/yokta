@@ -49,7 +49,13 @@ public class CodeActivity extends ToolbarActivity
         mCurInterval = 0L;
         mCurCode = "";
         mUpdateDelay = DEFAULT_UPDATE_DELAY_MS;
-        mUpdater = new _cls1();
+        mUpdater = new Runnable() {
+			@Override
+			public void run() {
+				onUpdate();
+				mHandler.postDelayed(this, mUpdateDelay);
+			}
+		};
     }
 
     public static void openAsHome(Context context)
@@ -127,7 +133,12 @@ public class CodeActivity extends ToolbarActivity
         mNameTextView = (TextView)findViewById(0x7f080000);
         mProgressBar = (OktaLogoProgressBar)findViewById(0x7f080001);
         onSetupProgressBar();
-        mProgressBar.setOnClickListener(new _cls2());
+        mProgressBar.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				onCopyCode();
+			}
+		});
     }
 
     protected void onPause()
@@ -194,45 +205,4 @@ public class CodeActivity extends ToolbarActivity
     {
         MIN_UPDATE_DELAY_MS = 33L;
     }
-
-
-
-    private class _cls1
-        implements Runnable
-    {
-
-        final CodeActivity this$0;
-
-        public void run()
-        {
-            onUpdate();
-            mHandler.postDelayed(this, mUpdateDelay);
-        }
-
-        _cls1()
-        {
-            this$0 = CodeActivity.this;
-            super();
-        }
-    }
-
-
-    private class _cls2
-        implements android.view.View.OnClickListener
-    {
-
-        final CodeActivity this$0;
-
-        public void onClick(View view)
-        {
-            onCopyCode();
-        }
-
-        _cls2()
-        {
-            this$0 = CodeActivity.this;
-            super();
-        }
-    }
-
 }

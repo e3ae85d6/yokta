@@ -35,7 +35,13 @@ public class DiagnosticsActivity extends InformationSectionActivity
     public DiagnosticsActivity()
     {
         mClock = new PasscodeClock(30);
-        mUpdater = new _cls1();
+        mUpdater = new Runnable() {
+			@Override
+			public void run() {
+				update();
+				mHandler.postDelayed(this, 500L);
+			}
+		};
     }
 
     protected void onCreate(Bundle bundle)
@@ -76,7 +82,7 @@ public class DiagnosticsActivity extends InformationSectionActivity
 
     public void onShowAccountUris(View view)
     {
-        startActivity(new Intent(this, com/okta/android/auth/activity/DiagnosticsAccountUrisActivity));
+        startActivity(new Intent(this, DiagnosticsAccountUrisActivity.class));
     }
 
     protected void update()
@@ -111,25 +117,4 @@ public class DiagnosticsActivity extends InformationSectionActivity
         String s = OktaPasscodeGenerator.generate(mAccount.getSecret());
         mPin.setText(s);
     }
-
-
-    private class _cls1
-        implements Runnable
-    {
-
-        final DiagnosticsActivity this$0;
-
-        public void run()
-        {
-            update();
-            mHandler.postDelayed(this, 500L);
-        }
-
-        _cls1()
-        {
-            this$0 = DiagnosticsActivity.this;
-            super();
-        }
-    }
-
 }

@@ -6,11 +6,16 @@ package yokta.android.auth.core;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ActivityNotFoundException;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
+
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
@@ -176,8 +181,26 @@ label0:
         android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(activity);
         builder.setTitle(title);
         builder.setMessage(message);
-        builder.setPositiveButton(buttonYes, new _cls1());
-        builder.setNegativeButton(buttonNo, new _cls2());
+        builder.setPositiveButton(buttonYes, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				String s = (String)targetApplications.get(0);
+				Intent intent = new Intent("android.intent.action.VIEW", Uri.parse((new StringBuilder()).append("market://details?id=").append(s).toString()));
+				try
+				{
+					activity.startActivity(intent);
+					return;
+				}
+				catch (ActivityNotFoundException activitynotfoundexception)
+				{
+					Log.w(IntentIntegrator.TAG, (new StringBuilder()).append("Google Play is not installed; cannot install ").append(s).toString());
+				}
+			}
+		});
+        builder.setNegativeButton(buttonNo, new DialogInterface.OnClickListener() {
+			@Override
+			public void onClick(DialogInterface dialog, int which) { }
+		});
         return builder.show();
     }
 
@@ -343,55 +366,4 @@ label0:
     {
         activity.startActivityForResult(intent, i);
     }
-
-
-
-
-
-    private class _cls1
-        implements android.content.DialogInterface.OnClickListener
-    {
-
-        final IntentIntegrator this$0;
-
-        public void onClick(DialogInterface dialoginterface, int i)
-        {
-            String s = (String)targetApplications.get(0);
-            Intent intent = new Intent("android.intent.action.VIEW", Uri.parse((new StringBuilder()).append("market://details?id=").append(s).toString()));
-            try
-            {
-                activity.startActivity(intent);
-                return;
-            }
-            catch (ActivityNotFoundException activitynotfoundexception)
-            {
-                Log.w(IntentIntegrator.TAG, (new StringBuilder()).append("Google Play is not installed; cannot install ").append(s).toString());
-            }
-        }
-
-        _cls1()
-        {
-            this$0 = IntentIntegrator.this;
-            super();
-        }
-    }
-
-
-    private class _cls2
-        implements android.content.DialogInterface.OnClickListener
-    {
-
-        final IntentIntegrator this$0;
-
-        public void onClick(DialogInterface dialoginterface, int i)
-        {
-        }
-
-        _cls2()
-        {
-            this$0 = IntentIntegrator.this;
-            super();
-        }
-    }
-
 }

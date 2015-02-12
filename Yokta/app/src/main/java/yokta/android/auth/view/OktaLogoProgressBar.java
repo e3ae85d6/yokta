@@ -365,41 +365,7 @@ public class OktaLogoProgressBar extends AutosizeTextView
         calculateProgressColor();
     }
 
-	private enum ProgressColorsMode {
+	public enum ProgressColorsMode {
 		ColorOnTransparent, TransparentOnColor
 	}
-
-    /*private static class ProgressColorsMode extends Enum
-    {
-
-        private static final ProgressColorsMode $VALUES[];
-        public static final ProgressColorsMode ColorOnTransparent;
-        public static final ProgressColorsMode TransparentOnColor;
-
-        public static ProgressColorsMode valueOf(String s)
-        {
-            return (ProgressColorsMode)Enum.valueOf(com/okta/android/auth/view/OktaLogoProgressBar$ProgressColorsMode, s);
-        }
-
-        public static ProgressColorsMode[] values()
-        {
-            return (ProgressColorsMode[])$VALUES.clone();
-        }
-
-        static 
-        {
-            ColorOnTransparent = new ProgressColorsMode("ColorOnTransparent", 0);
-            TransparentOnColor = new ProgressColorsMode("TransparentOnColor", 1);
-            ProgressColorsMode aprogresscolorsmode[] = new ProgressColorsMode[2];
-            aprogresscolorsmode[0] = ColorOnTransparent;
-            aprogresscolorsmode[1] = TransparentOnColor;
-            $VALUES = aprogresscolorsmode;
-        }
-
-        private ProgressColorsMode(String s, int i)
-        {
-            super(s, i);
-        }
-    }*/
-
 }

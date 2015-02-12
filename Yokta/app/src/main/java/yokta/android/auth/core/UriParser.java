@@ -25,7 +25,7 @@ public class UriParser
         String s = uri.getScheme();
         String s1 = "Default User";
 		String s2;
-        if ("otpauth".equalsIgnoreCase(s))
+        if (OTP_SCHEME.equalsIgnoreCase(s))
         {
             String s3 = uri.getAuthority();
             if (s3 == null || !s3.equalsIgnoreCase("totp"))
@@ -49,7 +49,7 @@ public class UriParser
             {
                 s4 = s1;
             }
-            s5 = uri.getQueryParameter("secret");
+            s5 = uri.getQueryParameter(SECRET_PARAM);
             s1 = s4;
             s2 = s5;
         } else
@@ -73,7 +73,7 @@ public class UriParser
         }
     }
 
-    private static class Result
+    public static class Result
     {
 
         private final String mSecret;
