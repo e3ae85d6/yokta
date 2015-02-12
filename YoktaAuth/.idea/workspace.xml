@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="164ad94e-de18-481f-8a63-1734719a9b76" name="Default" comment="standalone okta added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/Base32String$DecodingException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/Base32String.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/OktaPasscodeGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/PasscodeClock.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/PasscodeGenerator$MacSigner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/PasscodeGenerator$Signer.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/YoktaAuth/deema/yokta/auth/core/PasscodeGenerator.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/deema/Main.java" afterPath="$PROJECT_DIR$/src/deema/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="YoktaAuth.iws" />
@@ -389,7 +379,13 @@
       <option name="project" value="LOCAL" />
       <updated>1423740506784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gen code">
+      <created>1423740813610</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1423740813610</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,7 +434,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="standalone okta added" />
-    <option name="LAST_COMMIT_MESSAGE" value="standalone okta added" />
+    <MESSAGE value="gen code" />
+    <option name="LAST_COMMIT_MESSAGE" value="gen code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
