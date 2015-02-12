@@ -39,9 +39,9 @@ public class OktaPasscodeGenerator
         mGenerator = new PasscodeGenerator(mac, PASS_CODE_LEN);
     }
 
-    public static String generate(String s)
+    public static String generate(String secret)
     {
-        return generate(s, System.currentTimeMillis());
+        return generate(secret, System.currentTimeMillis());
     }
 
     public static String generate(String secret, long l)
