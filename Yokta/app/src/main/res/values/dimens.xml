@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_frame_width">15.0dip</dimen>
+    <dimen name="button_side_padding">30.0dip</dimen>
+    <dimen name="information_button_height">60.0dip</dimen>
+    <dimen name="large">15.0dip</dimen>
+    <dimen name="medium">10.0dip</dimen>
+    <dimen name="okta_logo_inner_shadow">1.0px</dimen>
+    <dimen name="okta_logo_outer_shadow">1.0px</dimen>
+    <dimen name="okta_logo_stroke">1.0px</dimen>
+    <dimen name="small">5.0dip</dimen>
+    <dimen name="toolbar_button_width">49.0dip</dimen>
+    <dimen name="toolbar_height">49.0dip</dimen>
+    <dimen name="toolbar_one_line">1.0px</dimen>
+    <dimen name="toolbar_three_lines">3.0px</dimen>
+    <dimen name="toolbar_two_lines">2.0px</dimen>
+    <dimen name="xlarge">20.0dip</dimen>
+    <dimen name="xsmall">2.0dip</dimen>
+</resources>

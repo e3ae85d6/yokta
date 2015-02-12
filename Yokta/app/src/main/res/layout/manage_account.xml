@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/activity_frame_width" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="@*android:style/TextAppearance.Medium" android:id="@id/descr" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small" android:layout_marginRight="@dimen/small" android:layout_marginBottom="@dimen/activity_frame_width" android:text="@string/manage_account_text" />
+        <Button android:id="@id/scan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/manage_account_scan_barcode" android:drawableLeft="@drawable/button_scan_code" android:drawableRight="@drawable/button_transparent" android:onClick="onScanBarcodeClicked" />
+        <Button android:id="@id/manual" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/manage_account_enter_manually" android:drawableLeft="@drawable/button_manual_entry" android:drawableRight="@drawable/button_transparent" android:onClick="onEnterManuallyClicked" />
+    </LinearLayout>
+</ScrollView>

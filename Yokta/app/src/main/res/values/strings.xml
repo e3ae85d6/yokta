@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Okta Verify</string>
+    <string name="app_name_short">Okta Verify</string>
+    <string name="code_copied_to_clipboard">"   Copied to clipboard   "</string>
+    <string name="copy_hint">Touch to copy</string>
+    <string name="enter_account_activity_title">Enter Account</string>
+    <string name="enter_account_cancel_label">Cancel</string>
+    <string name="enter_account_error_parse_uri">Failed to extract secret key from URI.</string>
+    <string name="enter_account_error_secret_decode">failed to decode key: %s</string>
+    <string name="enter_account_error_secret_empty">key is empty</string>
+    <string name="enter_account_error_secret_invalid_char">key has invalid characters: %s</string>
+    <string name="enter_account_error_secret_too_short">key is too short</string>
+    <string name="enter_account_error_username_empty">account name is empty</string>
+    <string name="enter_account_name_hint">Okta account (username)</string>
+    <string name="enter_account_name_label">Account</string>
+    <string name="enter_account_save_label">Save</string>
+    <string name="enter_account_secret_hint">Secret key</string>
+    <string name="enter_account_secret_hint_unmodified">(leave secret unmodified)</string>
+    <string name="enter_account_secret_label">Secret Key</string>
+    <string name="information_barcode_help_text">&lt;H3>Heading&lt;/H3> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;br/> &lt;br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &lt;H4>Heading&lt;/H4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;br/> &lt;br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. &lt;H4>Heading&lt;/H4> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &lt;br/> &lt;br/> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="information_diag_account_uris">Account URIs</string>
+    <string name="information_diag_countdown">Countdown:</string>
+    <string name="information_diag_current_interval">Current Interval:</string>
+    <string name="information_diag_interval">Interval:</string>
+    <string name="information_diag_name">Name:</string>
+    <string name="information_diag_not_set">[not set]</string>
+    <string name="information_diag_pin">Pin:</string>
+    <string name="information_diag_reset">Reset Account</string>
+    <string name="information_diag_title">Diagnostics</string>
+    <string name="information_diag_uris">Account URIs</string>
+    <string name="information_help_button">Help</string>
+    <string name="information_help_text">&lt;p> Welcome to the Okta Application! &lt;/p> &lt;p> Now that the Okta Application is installed, you need to configure it to link it to your Okta account. &lt;/p> &lt;H5>Configuring your Account using QR code&lt;/H5> &lt;p> Scanning the QR code with your phone’s camera is the easiest way to configure your account. &lt;/p> &lt;p> &lt;b>1.&lt;/b> On your phone, open the Okta app and tap the &lt;b>Scan Code&lt;/b> button.&lt;br/>&lt;br/> &lt;b>2.&lt;/b> Scan the QR code on your computer screen using your phone’s camera. &lt;/p> &lt;p> A secret is saved message will display and you’ll see the passcode generator screen, which will generate passcodes for you to use when prompted for extra verification. You’ll have 30 seconds to enter the passcode before a new one is generated. &lt;/p> &lt;p> That’s it! You can now complete the extra verification steps. &lt;/p> &lt;H5>Configuring your Account Manually&lt;/H5> &lt;p> You can also configure your account manually. &lt;/p> &lt;p> &lt;b>1.&lt;/b> On your phone, open the Okta app and tap the &lt;b>enter manually&lt;/b> button.&lt;br/>&lt;br/> &lt;b>2.&lt;/b> In the Okta Account field, enter your okta username (i.e ted@mycompany.com)&lt;br/>&lt;br/> &lt;b>3.&lt;/b> Enter the key displayed on your computer in the &lt;b>Secret Key&lt;/b> field.&lt;br/>&lt;br/> &lt;b>4.&lt;/b> Click &lt;b>Save&lt;/b>. &lt;/p> &lt;p> You’ll see the passcode generator screen, which will generate passcodes for you to use when prompted for extra verification. You’ll have 30 seconds to enter in the passcode before a new one is generated. &lt;/p> &lt;p> That’s it! You can now complete the extra verification steps. &lt;/p> &lt;H5>Reconfigure your Account&lt;/H5> &lt;p> You can revoke your existing Okta App passcode and reconfigure your account at anytime. &lt;/p> &lt;p> &lt;b>1.&lt;/b> Sign in to your organization’s Okta address. (i.e. mycompany.okta.com)&lt;br/>&lt;br/> &lt;b>2.&lt;/b> Click on the &lt;b>Account&lt;/b> Tab&lt;br/>&lt;br/> &lt;b>3.&lt;/b> In the &lt;b>Extra Verification&lt;/b> section, click the &lt;b>Edit&lt;/b> button and click &lt;b>Yes&lt;/b> in the Set up Okta App Dialog box.&lt;br/>&lt;br/> &lt;b>4.&lt;/b> Follow the prompts and reconfigure your account.&lt;br/>&lt;br/> &lt;/p></string>
+    <string name="information_help_title">Help</string>
+    <string name="information_legal_button">Legal Information</string>
+    <string name="information_legal_html_file">OktaVerify_Android_License10042013.html</string>
+    <string name="information_legal_title">Legal Information</string>
+    <string name="information_title">Information</string>
+    <string name="information_version">Version: %s</string>
+    <string name="initial_setup_intro_text">"Welcome to the Okta Verify App! Your company is using extra verification to provide an added level of security and the Okta App will provide the verification codes used for signing into the Okta service. 
+
+How do you want to configure your Okta account?"</string>
+    <string name="install_barcode_confirm">Yes</string>
+    <string name="install_barcode_deny">No</string>
+    <string name="install_barcode_message">Scanning a code requires Barcode Scanner. Would you like to install it?</string>
+    <string name="install_barcode_title">Install Barcode Scanner?</string>
+    <string name="manage_account_enter_manually">Enter Manually</string>
+    <string name="manage_account_error_parse_uri">Failed to extract user name and/or secret key from URI.</string>
+    <string name="manage_account_scan_barcode">Scan Code</string>
+    <string name="manage_account_success_parse_uri">Secret is saved.</string>
+    <string name="manage_account_text">How do you want to configure your Okta account?</string>
+    <string name="manage_account_title">Manage Account</string>
+</resources>
