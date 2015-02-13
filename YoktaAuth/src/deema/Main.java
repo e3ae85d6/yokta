@@ -9,7 +9,7 @@ public class Main {
 	static final String SECRET = "KFWXIQLGNJLTQMCX";
 
     public static void main(String[] args) {
-		String code = OktaPasscodeGenerator.generate("JBFGS3BSJ5VUCNDQ");
+		String code = OktaPasscodeGenerator.generate(SECRET);
 		System.out.println(code);
     }
 }
