@@ -43,13 +43,13 @@ public class PasscodeGenerator
         this(((Signer) (new MacSigner(mac))), i);
     }
 
-    static int hashToInt(byte abyte0[], int i)
+    static int hashToInt(byte buf[], int offset)
     {
-        boolean flag = abyte0.length >= i + 4;
+        boolean flag = buf.length >= offset + 4;
         DataInputStream datainputstream;
         int j;
         //a.a(flag);
-        datainputstream = new DataInputStream(new ByteArrayInputStream(abyte0, i, abyte0.length - i));
+        datainputstream = new DataInputStream(new ByteArrayInputStream(buf, offset, buf.length - offset));
         try
         {
             j = datainputstream.readInt();
