@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="copy_toast_gravity_offset">120</integer>
-    <integer name="copy_toast_horizontal_margin">20</integer>
-    <integer name="copy_toast_vertical_margin">10</integer>
-</resources>
