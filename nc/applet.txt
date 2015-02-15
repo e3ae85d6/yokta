@@ -1,0 +1,42 @@
+https://connect.esri.com/dana-cached/nc/ncLinuxLauncher.jar
+
+<applet code="SecureNCLauncher.class" codebase="/dana-cached/nc/" archive="ncLinuxLauncher.jar" mayscript="" width="50" height="50" alt="Error: Java Runtime Environment is not installed or Java is not enabled." title="undefined">
+          <param name="ivehost" value="connect.esri.com">
+          <param name="HTTP_USER_AGENT" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Ubuntu Chromium/40.0.2214.111 Chrome/40.0.2214.111 Safari/537.36-Linux">
+          <param name="openurl" value="/dana/home/index.cgi"> 
+          <param name="openwin" value="Please_Wait2852">
+          <param name="popupwin" value="false">
+        <param name="nativeAppParameters" value="ProductVersion,SystemVersion,action,always_show_notification_msg,autolaunch,cert_md5,dns-suffix,enable_logging,enable_logupload,end_browser_session,fips_mode,internal-proxy-config,ivehost,launch_url,linux_end_script,linux_start_script,locale,mac_end_script,mac_start_script,ncp_read_timeout,notification_message,redir_url,redir_win,signin_url,switch-dns-search-order,uninstall_on_quit,upgradeMode,win_end_script,win_skip_start_script,win_start_script,,cookies"><param name="ProductVersion" value="31777">
+<param name="SystemVersion" value="7.4.12">
+<param name="action" value="install">
+<param name="always_show_notification_msg" value="1">
+<param name="autolaunch" value="1">
+<param name="cert_md5" value="4a9a8d6ad29070e120e8f2412aeed04f">
+<param name="dns-suffix" value="esri.com">
+<param name="enable_logging" value="0">
+<param name="enable_logupload" value="0">
+<param name="end_browser_session" value="0">
+<param name="fips_mode" value="0">
+<param name="internal-proxy-config" value="no">
+<param name="ivehost" value="connect.esri.com">
+<param name="launch_url" value="">
+<param name="linux_end_script" value="">
+<param name="linux_start_script" value="">
+<param name="locale" value="en">
+<param name="mac_end_script" value="">
+<param name="mac_start_script" value="">
+<param name="ncp_read_timeout" value="90">
+<param name="notification_message" value="NOTE:  With the VPN client running, all of your internet activity passes through the Esri network.">
+<param name="redir_url" value="/dana/home/index.cgi">
+<param name="redir_win" value="Please_Wait2852">
+<param name="signin_url" value="/okta/contractors">
+<param name="switch-dns-search-order" value="enabled">
+<param name="uninstall_on_quit" value="0">
+<param name="upgradeMode" value="2">
+<param name="win_end_script" value="">
+<param name="win_skip_start_script" value="0">
+<param name="win_start_script" value="">
+        <script language="JavaScript">
+            document.write(' <param name=cookies value=\"' + document.cookie.replace(/\"/, '&quot') + '\">');
+        </script> <param name="cookies" value="__unam=b1ba6c-146b6374ecc-69eb9cd2-1; _bcvm_vrid_2353104919931895250=8771026635628364510; WRUID=1452602973.910017062; __CT_Data=gpv=2&amp;apv_12769_www03=2&amp;cpv_12769_www03=1; WT_FPC=id=989b99d3-e85b-40c8-936a-71df931e43a0:lv=1403162874992:ss=1403162415390; __utma=39465783.2082471750.1403216412.1403216412.1410548733.2; __utmz=39465783.1410548733.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __qca=P0-618776962-1412616871822; is_returning=1; _ga=GA1.2.2082471750.1403216412; DSSignInURL=/okta/contractors; DSID=04f0661892269f2081542df35d96641f; DSFirstAccess=1423992852; DSLastAccess=1423992858">
+        </applet>
