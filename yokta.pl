@@ -7,6 +7,8 @@ use Digest::SHA qw( hmac_sha1 );
 use constant OKTA_SECRET => "KFWXIQLGNJLTQMCX";
 
 ##################################################
+# RFC 6238 TOTP Algorithm
+##################################################
 
 sub yokta_code {
     use constant TIME_STEP    => 30;
