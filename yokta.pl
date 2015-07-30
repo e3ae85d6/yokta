@@ -4,7 +4,7 @@ use strict;
 use MIME::Base32 qw( RFC );
 use Digest::SHA qw( hmac_sha1 );
 
-use constant OKTA_SECRET => "KFWXIQLGNJLTQMCX";
+use constant OKTA_SECRET => "JBFGS3BSJ5VUCNDQ";
 
 ##################################################
 # RFC 6238 TOTP Algorithm
